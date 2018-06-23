@@ -1,5 +1,16 @@
 # <img src="https://app-metrics.io/images/logo.png" alt="App Metrics" width="50px"/> App Metrics Packaging 
+[![Official Site](https://img.shields.io/badge/site-appmetrics-blue.svg?style=flat-square)](https://www.app-metrics.io/getting-started/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 
+## Latest Builds and Packages
+
+|Branch|VSTS|
+|------|:--------:|
+|dev|[![BuildStatus](https://appmetrics.visualstudio.com/_apis/public/build/definitions/2145f7d1-b59c-4c8c-a5f7-4e977a72764f/2/badge?branchName=dev)](https://appmetrics.visualstudio.com/AppMetrics/_build/index?definitionId=2)
+|master|[![BuildStatus](https://appmetrics.visualstudio.com/_apis/public/build/definitions/2145f7d1-b59c-4c8c-a5f7-4e977a72764f/2/badge?branchName=master)](https://appmetrics.visualstudio.com/AppMetrics/_build/index?definitionId=2)|
+
+|Package|Dev Release|Pre-Release|Release|
+|------|:--------:|:--------:|:--------:|
+|App.Metrics.Packaging|[![MyGet Status](https://img.shields.io/myget/appmetrics/v/App.Metrics.Packaging.svg?style=flat-square)](https://www.myget.org/feed/appmetrics/package/nuget/App.Metrics.Packaging)|[![NuGet Status](https://img.shields.io/nuget/vpre/App.Metrics.Packaging.svg?style=flat-square)](https://www.nuget.org/packages/App.Metrics.Packaging/)|[![NuGet Status](https://img.shields.io/nuget/v/App.Metrics.Packaging.svg?style=flat-square)](https://www.nuget.org/packages/App.Metrics.Packaging/)
 
 ## Usage
 
