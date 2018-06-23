@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
+    <Description>NuGet packaging for AppMetrics</Description>
+		<PackageProjectUrl>https://app-metrics.io/</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>App Metrics Contributors</Authors>
+    <Company>App Metrics</Company>
+    <Copyright>© $([System.DateTime]::UtcNow.ToString(yyyy)) App Metrics Contributors.</Copyright>
+    <PackageTags>appmetrics;metrics</PackageTags>
+	  <PackageIconUrl>https://app-metrics.io/images/logo.png</PackageIconUrl>
+    <VersionSuffix></VersionSuffix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="build*\*" />
+    <Content Include="build\*" PackagePath="build" />
+    <Content Include="buildMultiTargeting\*" PackagePath="buildMultiTargeting" />
+  </ItemGroup>
+
+</Project>

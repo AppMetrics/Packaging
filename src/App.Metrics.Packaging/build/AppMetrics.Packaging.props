@@ -1,0 +1,36 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Authors Condition="'$(Authors)' == ''">App Metrics Contributors</Authors>
+    <Company Condition="'$(Company)' == ''">App Metrics</Company>
+    <Copyright Condition="'$(Copyright)' == ''">© $([System.DateTime]::UtcNow.ToString(yyyy)) App Metrics.</Copyright>
+    <PackageTags Condition="'$(PackageTags)' == ''">appmetrics;metrics</PackageTags>
+    <PackageIconUrl Condition="'$(PackageIconUrl)' == ''">https://app-metrics.io/images/logo.png</PackageIconUrl>
+    <PackageOutputPath Condition="'$(PackageOutputPath)' == ''">..\..\.artifacts\packages</PackageOutputPath>
+    <PackageProjectUrl Condition="'$(PackageProjectUrl)' == ''">https://app-metrics.io/</PackageProjectUrl>
+    <PackageLicenseUrl Condition="'$(PackageLicenseUrl)' == ''">https://github.com/alhardy/AppMetrics/blob/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild Condition="'$(GeneratePackageOnBuild)' == ''">false</GeneratePackageOnBuild>
+    <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">true</GenerateDocumentationFile>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+		<GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <NoWarn>$(NoWarn);</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <RepositoryType>git</RepositoryType>
+    <CodeAnalysisRuleSet>..\..\AppMetrics.ruleset</CodeAnalysisRuleSet>
+	  <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Key.snk</AssemblyOriginatorKeyFile>
+	  <SignAssembly>true</SignAssembly>
+	  <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
+  </PropertyGroup>
+
+  <ItemGroup>
+		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />		
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="StyleCop.Analyzers" Version="1.0.0" PrivateAssets="All" />
+	</ItemGroup>
+
+</Project>
