@@ -18,21 +18,7 @@
 		<GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <NoWarn>$(NoWarn);</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <LangVersion>latest</LangVersion>
     <RepositoryType>git</RepositoryType>
-    <CodeAnalysisRuleSet>..\..\AppMetrics.ruleset</CodeAnalysisRuleSet>
-	  <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Key.snk</AssemblyOriginatorKeyFile>
-	  <SignAssembly>true</SignAssembly>
-	  <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
   </PropertyGroup>
-
-  <ItemGroup>
-		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />		
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="StyleCop.Analyzers" Version="1.0.0" PrivateAssets="All" />
-    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.1" PrivateAssets="All" /> 
-	</ItemGroup>
 
 </Project>
