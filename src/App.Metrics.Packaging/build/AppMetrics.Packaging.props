@@ -1,6 +1,7 @@
 ﻿<Project>
 
   <PropertyGroup>
+    <Product>App Metrics</Product>
     <Authors Condition="'$(Authors)' == ''">App Metrics Contributors</Authors>
     <Company Condition="'$(Company)' == ''">App Metrics</Company>
     <Copyright Condition="'$(Copyright)' == ''">© $([System.DateTime]::UtcNow.ToString(yyyy)) App Metrics.</Copyright>
@@ -31,6 +32,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="StyleCop.Analyzers" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.1" PrivateAssets="All" /> 
 	</ItemGroup>
 
 </Project>
